@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "pretendard";
+  src: url(./libs/fonts/Pretendard-Regular.otf);
+}
+
+body {
+  font-family: "pretendard";
+  background-color: #f1f1f1;
+  padding: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  min-height: 80vh;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 50px 20px 50px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+}
