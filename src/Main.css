@@ -1,13 +1,13 @@
 @font-face {
   font-family: "pretendard";
-  src: url(./libs/fonts/Pretendard-Regular.otf);
+  src: url(./libs/fonts/PretendardVariable.ttf);
 }
 
 body {
   display: flex;
   flex-direction: column;
   background-color: #f1f1f1;
-  padding: 50px;
+  padding: 70px;
 }
 
 a {
@@ -18,7 +18,7 @@ a {
 .container {
   max-width: 1200px;
   min-height: 80vh;
-  padding: 50px 20px 50px 20px;
+  padding: 50px 40px 50px 40px;
   box-sizing: border-box;
   border-radius: 10px;
   background-color: white;
@@ -26,14 +26,52 @@ a {
   overflow-y: hidden;
 }
 
+.main-box {
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.main-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
 .title {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.information-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.information-title {
+  font-size: 26px;
+  font-weight: 500;
+  margin-top: 60px;
+}
+
+.information-box {
+  display: flex;
+  align-items: center;
+  > p,
+  a {
+    margin: 8px 0px 8px 0px;
+    font-size: 16px;
+  }
 }
 
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  margin-top: 50px;
+  margin-top: 0px;
 }

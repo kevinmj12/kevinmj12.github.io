@@ -8,5 +8,6 @@ export default function Damyo() {
       <p class="title">담요 - 담배는 요기서</p>
       <p class="description">흡연구역 정보제공앱</p>
     </div>
+    // 링크 상세내용 사용기술및라이브러리 담당한기능
   );
 }
