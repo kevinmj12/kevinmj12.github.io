@@ -62,8 +62,6 @@ export default function Inforamtion() {
           <div className="inforamtion-stack">
             <SiFlutter style={{ color: "#5CC3F0" }} /> <p>Flutter</p>
           </div>
-        </div>
-        <div className="information-box">
           <div className="inforamtion-stack">
             <FaNodeJs style={{ color: "#6FA661" }} /> <p>Node.js</p>
           </div>
@@ -76,8 +74,6 @@ export default function Inforamtion() {
           <div className="inforamtion-stack">
             <SiTypescript style={{ color: "#2F74C0" }} /> <p>TypeScript</p>
           </div>
-        </div>
-        <div className="information-box">
           <div className="inforamtion-stack">
             <SiKotlin style={{ color: "#B41CE1" }} /> <p>Kotlin</p>
           </div>

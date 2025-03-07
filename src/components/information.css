@@ -16,7 +16,9 @@
 
 .information-box {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  min-width: 290px;
   gap: 10px;
   font-size: 18px;
   > p,

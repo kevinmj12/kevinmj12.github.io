@@ -8,7 +8,7 @@ body {
 .project-container {
   position: relative;
   max-width: 1200px;
-  min-width: 450px;
+  min-width: 300px;
   min-height: 80vh;
   margin: auto;
   padding: 60px 40px 60px 40px;
@@ -23,6 +23,9 @@ body {
   font-size: 18px;
   font-weight: 450;
   line-height: 1.6;
+  @media (max-width: 900px) {
+    padding: 60px 20px 60px 20px;
+  }
 }
 
 .project-back {
@@ -32,7 +35,7 @@ body {
   font-size: 25px;
   cursor: pointer;
   @media (max-width: 900px) {
-    left: 40px;
+    left: 20px;
     top: 20px;
   }
 }
