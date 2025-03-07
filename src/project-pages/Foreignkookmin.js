@@ -17,44 +17,44 @@ export default function Pofo() {
 
   const images = [
     {
-      original: "/foreignkookmin/slide1.png",
+      original: "/foreignkookmin/fk-slide1.png",
       originalHeight: "600px",
-      thumbnail: "/foreignkookmin/slide1.png",
+      thumbnail: "/foreignkookmin/fk-slide1.png",
     },
     {
-      original: "/foreignkookmin/slide2.png",
+      original: "/foreignkookmin/fk-slide2.png",
       originalHeight: "600px",
-      thumbnail: "/foreignkookmin/slide2.png",
+      thumbnail: "/foreignkookmin/fk-slide2.png",
     },
     {
-      original: "/foreignkookmin/slide3.png",
+      original: "/foreignkookmin/fk-slide3.PNG",
       originalHeight: "600px",
-      thumbnail: "/foreignkookmin/slide3.png",
+      thumbnail: "/foreignkookmin/fk-slide3.PNG",
     },
     {
-      original: "/foreignkookmin/slide4.png",
+      original: "/foreignkookmin/fk-slide4.png",
       originalHeight: "600px",
-      thumbnail: "/foreignkookmin/slide4.png",
+      thumbnail: "/foreignkookmin/fk-slide4.png",
     },
     {
-      original: "/foreignkookmin/slide5.png",
+      original: "/foreignkookmin/fk-slide5.PNG",
       originalHeight: "600px",
-      thumbnail: "/foreignkookmin/slide5.png",
+      thumbnail: "/foreignkookmin/fk-slide5.PNG",
     },
     {
-      original: "/foreignkookmin/slide6.png",
+      original: "/foreignkookmin/fk-slide6.PNG",
       originalHeight: "600px",
-      thumbnail: "/foreignkookmin/slide6.png",
+      thumbnail: "/foreignkookmin/fk-slide6.PNG",
     },
     {
-      original: "/foreignkookmin/slide7.png",
+      original: "/foreignkookmin/fk-slide7.PNG",
       originalHeight: "600px",
-      thumbnail: "/foreignkookmin/slide7.png",
+      thumbnail: "/foreignkookmin/fk-slide7.PNG",
     },
     {
-      original: "/foreignkookmin/slide8.png",
+      original: "/foreignkookmin/fk-slide8.png",
       originalHeight: "600px",
-      thumbnail: "/foreignkookmin/slide8.png",
+      thumbnail: "/foreignkookmin/fk-slide8.png",
     },
   ];
   return (
