@@ -11,10 +11,13 @@ import {
   SiDart,
   SiReact,
   SiTypescript,
+  SiJavascript,
   SiGoogleplay,
+  SiKotlin,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import kimminje from "./libs/images/kimminje.jpg";
+import Inforamtion from "./components/information";
 
 function Main() {
   return (
@@ -37,33 +40,8 @@ function Main() {
             </p>
           </div>
         </div>
-        <div className="information-container"></div>
-        <p className="information-title">기본 정보</p>
-        <div className="information-box">
-          <MdOutlineEmail style={{ marginRight: "10px" }} />
-          <p>kevinmj12@gmail.com</p>
-        </div>
-        <div className="information-box">
-          <SiGithub style={{ marginRight: "10px" }} />
-          <a
-            href="https://github.com/kevinmj12"
-            target="_blank"
-            rel="noreferrer"
-          >
-            https://github.com/kevinmj12
-          </a>
-        </div>
-        <div className="information-box">
-          <SiTistory style={{ marginRight: "10px" }} />
-          <a
-            href="https://makeaccident.tistory.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            https://makeaccident.tistory.com/
-          </a>
-        </div>
 
+        <Inforamtion />
         <p className="information-title">프로젝트</p>
         <div className="card-container">
           <MainCard

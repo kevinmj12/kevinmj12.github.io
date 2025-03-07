@@ -1,0 +1,36 @@
+.information-container {
+  display: flex;
+  color: #030303;
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.information-title {
+  font-size: 26px;
+  font-weight: 500;
+  margin-top: 60px;
+}
+
+.information-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  > p,
+  a {
+    margin: 8px 0px 8px 0px;
+  }
+}
+
+.inforamtion-stack {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  > p {
+    margin: 8px 5px 8px 0px;
+  }
+}
