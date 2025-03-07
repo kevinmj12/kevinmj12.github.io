@@ -12,6 +12,8 @@ import {
   SiGoogleplay,
   SiAndroid,
   SiPython,
+  SiPytorch,
+  SiExpress,
 } from "react-icons/si";
 
 import { RiNextjsFill } from "react-icons/ri";
@@ -76,7 +78,7 @@ function Main() {
             description={"국민대학교 학식 정보제공앱"}
             imageUrl={kookbapImage}
             url="/kookbap"
-            stacks={[SiAndroid, FaJava, FaNode, SiPython]}
+            stacks={[SiAndroid, FaJava, SiPython, SiPytorch, FaNode, SiExpress]}
           />
         </div>
       </div>
