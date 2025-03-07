@@ -13,16 +13,16 @@ import {
   SiPython,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
+import { LuMail } from "react-icons/lu";
 import { RiNextjsFill } from "react-icons/ri";
 
 export default function Inforamtion() {
   return (
     <div className="information-container">
       <div style={{ width: "50%", minWidth: "300px" }}>
-        <p className="information-title">기본 정보</p>
+        <p className="information-title">📄 기본 정보</p>
         <div className="information-box">
-          <MdOutlineEmail />
+          <LuMail />
           <p>kevinmj12@gmail.com</p>
         </div>
         <div className="information-box">

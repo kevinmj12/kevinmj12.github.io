@@ -3,18 +3,14 @@ import MainCard from "./components/main-card";
 import damyoImage from "./libs/images/damyo.png";
 import pofoImage from "./libs/images/pofo.png";
 import foreignKookminImage from "./libs/images/foreign-kookmin.png";
-import { MdOutlineEmail } from "react-icons/md";
 import {
-  SiGithub,
-  SiTistory,
   SiFlutter,
   SiDart,
   SiReact,
   SiTypescript,
-  SiJavascript,
   SiGoogleplay,
-  SiKotlin,
 } from "react-icons/si";
+
 import { RiNextjsFill } from "react-icons/ri";
 import kimminje from "./libs/images/kimminje.jpg";
 import Inforamtion from "./components/information";
