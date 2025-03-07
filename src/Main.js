@@ -1,19 +1,23 @@
 import "./Main.css";
 import MainCard from "./components/main-card";
 import damyoImage from "./libs/images/damyo.png";
-import pofoImage from "./libs/images/pofo.png";
+import pofoImage from "./libs/images/pofo.jpg";
 import foreignKookminImage from "./libs/images/foreign-kookmin.png";
+import kookbapImage from "./libs/images/kookbap.png";
 import {
   SiFlutter,
   SiDart,
   SiReact,
   SiTypescript,
   SiGoogleplay,
+  SiAndroid,
+  SiPython,
 } from "react-icons/si";
 
 import { RiNextjsFill } from "react-icons/ri";
 import kimminje from "./libs/images/kimminje.jpg";
 import Inforamtion from "./components/information";
+import { FaJava, FaNode } from "react-icons/fa";
 
 function Main() {
   return (
@@ -34,11 +38,17 @@ function Main() {
             <p style={{ fontSize: "33px", fontWeight: "600", margin: "0px" }}>
               김민제
             </p>
+            <p>
+              새로운 것을 배우고 도전하는 것을 좋아하며
+              <br />
+              변화하는 최신 기술 트렌드를 빠르게 익히고 적응하는 개발자가 되고
+              싶습니다.
+            </p>
           </div>
         </div>
 
         <Inforamtion />
-        <p className="information-title">프로젝트</p>
+        <p className="information-title">🚀 프로젝트</p>
         <div className="card-container">
           <MainCard
             name={"담요"}
@@ -56,10 +66,17 @@ function Main() {
           />
           <MainCard
             name={"외국민"}
-            description={"외국인 유학생들을 위한 서비스앱"}
+            description={"국민대학교 외국인 유학생 정보제공앱"}
             imageUrl={foreignKookminImage}
             url="/foreignkookmin"
             stacks={[SiFlutter, SiDart, SiGoogleplay]}
+          />
+          <MainCard
+            name={"국밥"}
+            description={"국민대학교 학식 정보제공앱"}
+            imageUrl={kookbapImage}
+            url="/kookbap"
+            stacks={[SiAndroid, FaJava, FaNode, SiPython]}
           />
         </div>
       </div>

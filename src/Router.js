@@ -4,6 +4,7 @@ import Damyo from "./project-pages/Damyo";
 import Main from "./Main";
 import Foreignkookmin from "./project-pages/Foreignkookmin";
 import Pofo from "./project-pages/Pofo";
+import Kookbap from "./project-pages/Kookbap";
 
 const Router = () => {
   return (
@@ -13,6 +14,7 @@ const Router = () => {
         <Route path="/damyo" element={<Damyo />} />
         <Route path="/foreignkookmin" element={<Foreignkookmin />} />
         <Route path="/pofo" element={<Pofo />} />
+        <Route path="/kookbap" element={<Kookbap />} />
       </Routes>
     </BrowserRouter>
   );

@@ -31,6 +31,10 @@ body {
   left: 40px;
   font-size: 25px;
   cursor: pointer;
+  @media (max-width: 900px) {
+    left: 40px;
+    top: 20px;
+  }
 }
 
 .project-box {
@@ -68,5 +72,12 @@ body {
   gap: 10px;
   align-items: center;
   text-decoration: underline;
-  min-width: 400px;
+
+  a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block; /* 또는 inline-block */
+    max-width: 100%; /* 부모 요소를 넘어가지 않도록 설정 */
+  }
 }

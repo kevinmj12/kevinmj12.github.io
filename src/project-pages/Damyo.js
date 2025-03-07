@@ -5,6 +5,7 @@ import { SiGithub, SiYoutube, SiGoogleplay } from "react-icons/si";
 import "./projects.css";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
+import ScrollToTop from "../scroll-to-top";
 
 export default function Damyo() {
   const navigate = useNavigate();
@@ -15,20 +16,38 @@ export default function Damyo() {
 
   const images = [
     {
-      original: "/damyo/damyo.jpg",
+      original: "/damyo/damyo-slide1.png",
+      originalHeight: "600px",
+      thumbnail: "/damyo/damyo-slide1.png",
+    },
+    {
+      original: "/damyo/damyo-slide2.png",
+      originalHeight: "600px",
+      thumbnail: "/damyo/damyo-slide2.png",
+    },
+    {
+      original: "/damyo/damyo-slide3.png",
+      originalHeight: "600px",
+      thumbnail: "/damyo/damyo-slide3.png",
+    },
+    {
+      original: "/damyo/damyo-slide4.png",
+      originalHeight: "600px",
+      thumbnail: "/damyo/damyo-slide4.png",
     },
   ];
 
   return (
     <div>
+      <ScrollToTop />
       <div className="project-container">
         <div className="project-box">
           <div className="project-back">
             <IoArrowBack onClick={handleBack} />
           </div>
-          <img alt="담요" class="project-img" src={damyoImage} />
-          <p class="project-title">담요 - 담배는 요기서</p>
-          <p class="project-description">흡연구역 정보제공 애플리케이션</p>
+          <img alt="담요" className="project-img" src={damyoImage} />
+          <p className="project-title">담요 - 담배는 요기서</p>
+          <p className="project-description">흡연구역 정보제공 애플리케이션</p>
           <div className="project-index">🔗 링크</div>
           <div className="project-link">
             <SiGithub style={{ minWidth: "20px" }} />
@@ -64,7 +83,8 @@ export default function Damyo() {
           <ImageGallery
             items={images}
             showPlayButton={false}
-            showThumbnails={false}
+            showFullscreenButton={false}
+            showThumbnails={true}
           />
           <div style={{ lineHeight: "normal" }}>
             <p>담요는 흡연구역 정보를 제공해주는 모바일 애플리케이션입니다.</p>
@@ -85,7 +105,7 @@ export default function Damyo() {
           <div className="project-index">📖 사용 기술 및 핵심 라이브러리</div>
           <li>Flutter, Dart, SQLite</li>
           <li>Naver Map, Naver Auth, Google Auth </li>
-          <li>Provider, SQFLite, Geolocator, Fl Chart</li>
+          <li>provider, sqflite, geolocator, flChart</li>
 
           <div className="project-index">🛠️ 역할</div>
           <li style={{ fontSize: "20px" }}>프로젝트 팀장</li>
