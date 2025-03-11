@@ -105,7 +105,7 @@ export default function Damyo() {
           <div className="project-index">📖 사용 기술 및 핵심 라이브러리</div>
           <li>Flutter, Dart, SQLite</li>
           <li>Naver Map, Naver Auth, Google Auth </li>
-          <li>provider, sqflite, geolocator, flChart</li>
+          <li>provider, sqflite, geolocator, fl_chart</li>
 
           <div className="project-index">🛠️ 역할</div>
           <li style={{ fontSize: "20px" }}>프로젝트 팀장</li>
