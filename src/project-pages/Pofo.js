@@ -107,6 +107,13 @@ export default function Pofo() {
             </li>
           </ol>
           <li style={{ marginTop: "20px" }}> 마이페이지 구현</li>
+          <ol style={{ listStyleType: "inherit", margin: "0px" }}>
+            <li>
+              좌측에 내비게이션을 배치하고 Router를 통해 우측에 하위 페이지를
+              로드함
+            </li>
+            <li>나의 프로젝트에서 페이지네이션을 활용하여 무한 스크롤 구현</li>
+          </ol>
         </div>
       </div>
       <div style={{ height: "50px" }}></div>
