@@ -7,7 +7,7 @@ body {
 
 .project-container {
   position: relative;
-  max-width: 1200px;
+  max-width: 1500px;
   min-width: 300px;
   min-height: 80vh;
   margin: auto;
@@ -30,7 +30,7 @@ body {
 
 .project-back {
   position: absolute;
-  top: 60px;
+  top: 20px;
   left: 40px;
   font-size: 25px;
   cursor: pointer;
@@ -41,12 +41,29 @@ body {
 }
 
 .project-box {
-  max-width: 600px;
+  max-width: 1200px;
   width: 100%;
+}
+
+.project-main-info {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+
+.project-main-info-box {
+  width: 50%;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 }
 
 .project-img {
   width: 100%;
+  max-width: 900px;
   max-height: 500px;
   border-radius: 10px;
 }
@@ -54,6 +71,7 @@ body {
 .project-title {
   font-size: 28px;
   font-weight: 600;
+  margin: 0;
 }
 
 .project-description {
@@ -70,17 +88,15 @@ body {
   font-weight: 500;
 }
 
-.project-link {
+.project-link-box {
   display: flex;
   gap: 10px;
-  align-items: center;
-  text-decoration: underline;
+}
 
-  a {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: block; /* 또는 inline-block */
-    max-width: 100%; /* 부모 요소를 넘어가지 않도록 설정 */
-  }
+.project-link {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
 }

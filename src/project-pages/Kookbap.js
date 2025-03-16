@@ -1,6 +1,4 @@
 import kookbapImage from "../libs/images/kookbap.png";
-import { useNavigate } from "react-router-dom";
-import { IoArrowBack } from "react-icons/io5";
 import { SiGithub } from "react-icons/si";
 import "./projects.css";
 import ImageGallery from "react-image-gallery";
@@ -9,12 +7,6 @@ import "./projects.css";
 import ScrollToTop from "../scroll-to-top";
 
 export default function Kookbap() {
-  const navigate = useNavigate();
-
-  const handleBack = () => {
-    navigate(-1);
-  };
-
   const images = [
     {
       original: "/kookbap/kookbap-slide1.gif",
@@ -47,32 +39,16 @@ export default function Kookbap() {
       <ScrollToTop />
       <div className="project-container">
         <div className="project-box">
-          <div className="project-back">
-            <IoArrowBack onClick={handleBack} />
-          </div>
-          <img alt="포포" className="project-img" src={kookbapImage} />
-          <p className="project-title">국밥</p>
-          <p className="project-description">국민대학교 학식 정보제공앱</p>
-          <div className="project-index">🔗 링크</div>
-          <div className="project-link">
-            <SiGithub style={{ minWidth: "20px" }} />
-            <a
-              href="https://github.com/ji-hunc/kookbap"
-              target="_blank"
-              rel="noreferrer"
-            >
-              https://github.com/ji-hunc/kookbap
-            </a>
-          </div>
-          <div className="project-link">
-            <SiGithub style={{ minWidth: "20px" }} />
-            <a
-              href="https://github.com/ji-hunc/kookbap/tree/main/machineLearning"
-              target="_blank"
-              rel="noreferrer"
-            >
-              https://github.com/ji-hunc/kookbap/tree/main/machineLearning
-            </a>
+          <div className="project-main-info">
+            <div className="project-main-info-box">
+              <img alt="국밥" className="project-img" src={kookbapImage} />
+            </div>
+            <div className="project-main-info-box">
+              <p className="project-title">국밥</p>
+              <p className="project-description">
+                국민대학교 학식 정보제공 모바일 애플리케이션
+              </p>
+            </div>
           </div>
 
           <div className="project-index">⭐ 소개</div>
@@ -96,19 +72,52 @@ export default function Kookbap() {
             </p>
           </div>
 
+          <div className="project-index">🔗 링크</div>
+          <div className="project-link-box">
+            <a
+              href="https://github.com/ji-hunc/kookbap"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="project-link">
+                <SiGithub style={{ fontSize: "30px", minWidth: "30px" }} />
+                Github
+              </div>
+            </a>
+            <a
+              href="https://github.com/ji-hunc/kookbap/tree/main/machineLearning"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="project-link">
+                <SiGithub style={{ fontSize: "30px", minWidth: "30px" }} />
+                Github-ML
+              </div>
+            </a>
+          </div>
+
           <div className="project-index">📖 사용 기술 및 핵심 라이브러리</div>
           <li>Android, Node.js, Express, MySQL</li>
           <li>Java, Python, Pytorch</li>
           <li>Retrofit, Firebase Cloud Messaging</li>
 
           <div className="project-index">🛠️ 역할</div>
-          <li>잠재요인 협업필터링을 통해 메뉴 추천 서비스를 구현하였습니다.</li>
-          <li>RecyclerView를 통해 메뉴를 불러오도록 하였습니다.</li>
-          <li>마이페이지를 구현하였습니다</li>
-          <li>
-            {" "}
-            Firebase Cloud Messaging을 통해 알림 서비스를 구현하였습니다.
-          </li>
+          <li>메뉴 추천 페이지 구현</li>
+          <ol style={{ listStyleType: "inherit", margin: "0px" }}>
+            <li>잠재요인 협업필터링을 통해 메뉴 추천 서비스를 구현</li>
+            <li>
+              매일 자정마다 당일 학식 메뉴와 별점 데이터를 통해 모든 사용자의
+              추천 메뉴를 연산하여 DB에 업데이트함
+            </li>
+          </ol>
+          <li style={{ marginTop: "20px" }}>마이페이지 구현</li>
+          <ol style={{ listStyleType: "inherit", margin: "0px" }}>
+            <li>
+              Firebase Cloud Messaging, NotificationManager을 통해 알림 서비스를
+              구현
+            </li>
+            <li>RecyclerView를 통해 '내가 쓴 리뷰' 카드들을 불러옴</li>
+          </ol>
         </div>
       </div>
       <div style={{ height: "50px" }}></div>
