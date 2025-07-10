@@ -5,6 +5,7 @@ import Main from "./Main";
 import Foreignkookmin from "./project-pages/Foreignkookmin";
 import Pofo from "./project-pages/Pofo";
 import Kookbap from "./project-pages/Kookbap";
+import ProgramerStock from "./project-pages/ProgramerStock";
 
 const Router = () => {
   return (
@@ -15,6 +16,7 @@ const Router = () => {
         <Route path="/foreignkookmin" element={<Foreignkookmin />} />
         <Route path="/pofo" element={<Pofo />} />
         <Route path="/kookbap" element={<Kookbap />} />
+        <Route path="/programerstock" element={<ProgramerStock />} />
       </Routes>
     </BrowserRouter>
   );

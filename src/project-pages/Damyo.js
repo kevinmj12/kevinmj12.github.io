@@ -44,9 +44,24 @@ export default function Damyo() {
     },
 
     {
+      original: "/damyo/damyo-5.png",
+      originalHeight: "600px",
+      thumbnail: "/damyo/damyo-5.png",
+    },
+    {
+      original: "/damyo/damyo-6.png",
+      originalHeight: "600px",
+      thumbnail: "/damyo/damyo-6.png",
+    },
+    {
       original: "/damyo/damyo-4.png",
       originalHeight: "600px",
       thumbnail: "/damyo/damyo-4.png",
+    },
+    {
+      original: "/damyo/damyo-7.png",
+      originalHeight: "600px",
+      thumbnail: "/damyo/damyo-7.png",
     },
   ];
 
@@ -114,7 +129,7 @@ export default function Damyo() {
                     color: "red",
                   }}
                 />
-                Youtube
+                시연 영상
               </div>
             </a>
             <a
@@ -169,16 +184,37 @@ export default function Damyo() {
               </li>
               <li>
                 geolocator 라이브러리를 사용하여 앱 시작 시 사용자의 현재 위치를
-                불러오고 지도의 중심으로 설정함
+                불러오고 지도의 중심으로 설정
               </li>
             </ol>
             <li style={{ marginTop: "20px" }}>흡연구역 검색 기능 구현</li>
             <ol style={{ listStyleType: "inherit", margin: "0px" }}>
+              <li>
+                흡연구역 이름을 검색하면 흡연구역들의 정보가 나오도록 검색어
+                검색 기능을 구현
+              </li>
               <li>‘개방’, ‘실외’ 등의 태그 검색 기능 구현</li>
-              <li>검색어 검색 기능과 최근 검색어 기능 구현</li>
+              <li>캐시 데이터를 활용하여 최근 검색어 기능 구현</li>
+            </ol>
+
+            <li style={{ marginTop: "20px" }}>흡연구역 즐겨찾기 기능 구현</li>
+            <ol style={{ listStyleType: "inherit", margin: "0px" }}>
+              <li>사용자가 폴더를 만들고 흡연구역들을 관리할 수 있도록 구현</li>
+              <li>
+                즐겨찾기에서 흡연구역을 터치하면 해당 흡연구역의 위치로 지도를
+                이동
+              </li>
+            </ol>
+            <li style={{ marginTop: "20px" }}>흡연구역 제보 기능 구현</li>
+            <ol style={{ listStyleType: "inherit", margin: "0px" }}>
+              <li>지도를 움직여 원하는 위치를 제보할 수 있도록 설정</li>
+              <li>
+                제보 버튼을 누르면 해당 좌표를 주소로 변환하여 자동으로
+                입력하도록 설정
+              </li>
             </ol>
             <li style={{ marginTop: "20px" }}>
-              흡연구역 제보, 리뷰, 즐겨찾기 페이지 구현
+              흡연구역 리뷰, 수정 제안 기능 구현
             </li>
             <li>구글 로그인 기능 구현</li>
             <li>구글 플레이스토어에 배포 진행</li>

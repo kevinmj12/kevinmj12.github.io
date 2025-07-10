@@ -1,5 +1,6 @@
 import "./Main.css";
 import MainCard from "./components/main-card";
+import programerStockImage from "./libs/images/programer-stock.png";
 import damyoImage from "./libs/images/damyo.png";
 import pofoImage from "./libs/images/pofo.jpg";
 import foreignKookminImage from "./libs/images/foreign-kookmin.png";
@@ -52,6 +53,13 @@ function Main() {
         <Inforamtion />
         <p className="information-title">🚀 프로젝트</p>
         <div className="card-container">
+          <MainCard
+            name={"프로그래머스탁"}
+            description={"주식 모의 투자 서비스"}
+            imageUrl={programerStockImage}
+            url="/programerstock"
+            stacks={[SiReact, SiTypescript]}
+          />
           <MainCard
             name={"담요"}
             description={"흡연구역 안내 서비스, 담요"}

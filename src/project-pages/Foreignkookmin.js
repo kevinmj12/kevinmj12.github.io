@@ -117,7 +117,7 @@ export default function Pofo() {
                 <SiYoutube
                   style={{ fontSize: "30px", minWidth: "30px", color: "red" }}
                 />
-                Youtube
+                시연 영상
               </div>
             </a>
             <a
@@ -146,7 +146,10 @@ export default function Pofo() {
               Firebase Auth를 사용하여 국민대 이메일 인증 및 로그인, 회원가입
               서비스를 구현
             </li>
-            <li> 언어 변경 시스템을 구축하고 영어, 중국어를 추가함</li>
+            <li>
+              easy_localization을 활용하여 언어 변경 시스템을 구축하고 영어,
+              중국어를 추가
+            </li>
           </ol>
           <li style={{ marginTop: "20px" }}>발음 연습 페이지</li>
           <ol style={{ listStyleType: "inherit", margin: "0px" }}>
@@ -155,27 +158,28 @@ export default function Pofo() {
             </li>
             <li>
               사용자로부터 음성을 녹음받고 음성 파일을 wav파일로 변환하여 API를
-              사용함
+              사용
             </li>
+            <li>원형 막대 점수와 상세 점수, 상세 분석 결과 제공</li>
           </ol>
 
           <li style={{ marginTop: "20px" }}>챗봇 페이지</li>
           <ol style={{ listStyleType: "inherit", margin: "0px" }}>
             <li>
               State Pattern을 활용하여 챗봇이 답변을 생성하고 있을 때 다른
-              질문을 입력받을 수 없도록 차단함
+              질문을 입력받을 수 없도록 차단
             </li>
             <li>
               전송 버튼 터치 시 키보드 내려가기, 새로운 질문 입력 시 해당 질문이
               보이도록 포커스 맞추기 등 채팅 서비스에서 필요로 하는 기능들을
-              구현함
+              구현
             </li>
           </ol>
           <li style={{ marginTop: "20px" }}>학식 페이지</li>
           <ol style={{ listStyleType: "inherit", margin: "0px" }}>
             <li>
               국민대학교에서 제공하는 json 형태의 학식 데이터를 가공하여 정보를
-              제공함
+              제공
             </li>
           </ol>
         </div>
